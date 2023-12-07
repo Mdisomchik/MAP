@@ -31,3 +31,18 @@ return false;
    return true;
             }
 
+bool solveNQueens(vector <int>> & board, int col){
+if (col >=n){
+return true;
+}
+
+for (int i = 0; i < n;i++){
+if (ifSafe(board,i,col)){
+board[i][col] = 1;
+if(solveQueens(board,col + 1)){
+return true;
+}
+board[i][col] = 0;
+}
+}
+
