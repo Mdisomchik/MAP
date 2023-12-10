@@ -51,27 +51,4 @@ return true;
 board[i][col] = 0;
 }
 }
-   return false;
-}
-
-void printSolution(const vector<vector<int>>& board) {
-   
-    for (const auto& row : board) {
-        for (int cell : row) {
-            cout << cell << " ";
-        }
-        cout << endl;
-    }
-}
-
-int main() {
-    vector<vector<int>> board(N, vector<int>(N, 0));
-
-    if (!solveNQueens(board, 0)) {
-        cout << "No solution exists." << endl;
-    } else {
-        printSolution(board);
-    }
-
-    return 0;
 }
