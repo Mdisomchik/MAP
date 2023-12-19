@@ -31,7 +31,7 @@ return false;
 bool solveNQueens(vector <int >> &board, int col) {
 
     if (col >= n) {
-
+            
 return true;
 }
 
