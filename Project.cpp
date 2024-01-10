@@ -6,7 +6,7 @@ using namespace std;
 const int n = 8;
 const int squareSize = 60;
 
-vector<int> queensPlacement(n, -1); // Global variable to store queen placements
+vector<int> queensPlacement(n, -1);
 
 bool isSafe(const vector<vector<int>>& board, int row, int col) {
     for (int i = 0; i < col; i++) {
@@ -40,11 +40,11 @@ bool solveNQueens(vector<vector<int>>& board, int col) {
             board[i][col] = 1;
 
             if (solveNQueens(board, col + 1)) {
-                queensPlacement[col] = i; // Update global variable
+                queensPlacement[col] = i; 
                 return true;
             }
 
-            board[i][col] = 0; // Backtrack
+            board[i][col] = 0; 
         }
     }
     return false;
@@ -56,10 +56,10 @@ void drawChessboard(HDC hdc) {
             RECT square = { j * squareSize, i * squareSize, (j + 1) * squareSize, (i + 1) * squareSize };
 
             if ((i + j) % 2 == 0) {
-                FillRect(hdc, &square, CreateSolidBrush(RGB(255, 206, 158))); // Light color
+                FillRect(hdc, &square, CreateSolidBrush(RGB(255, 206, 158)));
             }
             else {
-                FillRect(hdc, &square, CreateSolidBrush(RGB(209, 139, 71))); // Dark color
+                FillRect(hdc, &square, CreateSolidBrush(RGB(209, 139, 71))); 
             }
         }
     }
@@ -70,7 +70,7 @@ void drawQueens(HDC hdc, const vector<int>& queensPlacement) {
         if (queensPlacement[i] != -1) {
             RECT queen = { queensPlacement[i] * squareSize, i * squareSize, (queensPlacement[i] + 1) * squareSize,
                           (i + 1) * squareSize };
-            FillRect(hdc, &queen, CreateSolidBrush(RGB(255, 0, 0))); // Red color
+            FillRect(hdc, &queen, CreateSolidBrush(RGB(255, 0, 0))); 
         }
     }
 }
