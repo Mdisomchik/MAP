@@ -52,7 +52,6 @@ Creează o tablă de șah goală reprezentată printr-un vector 2D (board) cu di
     } else {
         print(board);
     }
-
     return 0;
 }
 
