@@ -20,32 +20,33 @@ const int n = 8;
 Definește un întreg constant n cu valoarea 8, reprezentând dimensiunea tablei de șah și numărul de regine.
 
 bool isSafe(const vector<vector<int>>& board, int row, int col) 
+
     // Funcție pentru a verifica dacă plasarea unei regine într-o poziție specifică este sigură.
     // Returnează true dacă este sigur, false în caz contrar.
 
 Funcția isSafe verifică dacă este sigur să plasați o regină într-o anumită poziție pe tabla de șah. Ea ia în considerare coloana curentă, diagonală stângă și diagonală dreaptă pentru a se asigura că alte regine nu amenință noua poziționare.
 
 bool solveNQueens(vector<vector<int>>& board, int col) 
+
     // Funcție recursivă pentru a rezolva problema reginelor N folosind backtracking.
     // Returnează true dacă o soluție este găsită, false în caz contrar.
 
 Funcția solveNQueens este un algoritm de backtracking recursiv pentru a găsi o soluție la problema reginelor N. Ea încearcă să plaseze regine în fiecare rând al coloanei curente, revenind dacă o plasare în siguranță nu este posibilă.
 
 void print(const vector<vector<int>>& board) {
+
     // Funcție pentru a afișa configurarea tablei de șah.
-Documentație:
 
 Funcția print afișează starea curentă a tablei de șah, indicând pozițiile reginelor (1 pentru regină, 0 pentru pătrat gol).
 
 int main() {
+
     // Funcția principală unde începe execuția programului.
 
 Funcția main este punctul de intrare al programului.
-
     vector<vector<int>> board(n, vector<int>(n, 0));
-
+    
 Creează o tablă de șah goală reprezentată printr-un vector 2D (board) cu dimensiunile n x n, inițializată cu zerouri.
-
     if (!solveNQueens(board, 0)) {
         cout << "Fără soluții" << endl;
     } else {
