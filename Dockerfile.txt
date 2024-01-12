@@ -1,5 +1,0 @@
-FROM gcc:latest
-WORKDIR /usr/src/MAP
-COPY Project.cpp .
-RUN gcc -o Project Project.cpp -lstdc++
-CMD ["./Project"]
