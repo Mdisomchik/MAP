@@ -1,5 +1,5 @@
 FROM gcc:latest
-WORKDIR D:\MAP\MAP\Project
+WORKDIR /usr/src/MAP
 COPY Project.cpp .
 RUN gcc -o Project Project.cpp -lstdc++
 CMD ["./Project"]
