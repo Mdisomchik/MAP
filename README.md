@@ -4,7 +4,7 @@ Problema celor 8 turnuri: să se scrie un program care plasează 8 turnuri pe ta
 
 Aici va fi documentatia pentru acest proiect :
 
-In primul rand am gandil la a doua variant ade cod, in care dupa executare va fi si prezentarea grafica de tablou de sah, asa dupa research am gasit nisti librarii care pot sa folosesc pentru asta si am ajuns sa fac cu <Windows.h> - Windows SDK Extention. Am pus fisier cu prezentarea grafica dar nu am reusit sa fac imaginea docker din cauza ca nu am Extention pentru aceasta libraria.\
+In primul rand am gandil la a doua variant ade cod, in care dupa executare va fi si prezentarea grafica de tablou de sah, asa dupa research am gasit nisti librarii care pot sa folosesc pentru asta si am ajuns sa fac cu <Windows.h> - Windows SDK Extention. Am pus fisier cu prezentarea grafica dar nu am reusit sa fac imaginea docker din cauza ca nu am Extention pentru aceasta libraria.
 
  In rest, mai jos puteti sa gasiti cod cu comentariile. Imi placut sa lucrez cu Git si Docker, stiu si ca in viitorul apropriat intanesc cu ei mai des.
 
