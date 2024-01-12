@@ -1,0 +1,5 @@
+FROM gcc:latest
+WORKDIR D:\MAP\MAP\Project
+COPY Project.cpp .
+RUN gcc -o Project Project.cpp -lstdc++
+CMD ["./Project"]
